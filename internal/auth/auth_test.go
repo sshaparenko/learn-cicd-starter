@@ -18,7 +18,7 @@ func TestGetAPIKey(t *testing.T) {
 	fmt.Println(got)
 	want := "gdjkslJAf345fogkDS34LgdsormvD"
 
-	if strings.Compare(got, want) != 0 {
+	if strings.Compare(got, want) == 0 {
 		t.Fatalf("expected: %v, got: %v", want, got)
 	}
 }
